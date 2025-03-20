@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./project.css">
+</head>
+<body>
+  <header> WELCOME TO SUPUKO TOURS& PHOTOGRAPHY</header>
+  
+  <nav class="nav">
+    <ul>
+      <li> <a href="https://en.wikipedia.org/wiki/Elephant">  click to learn about elephants</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Lion"> click to learn about lions</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Rhinoceros">click to read about Rhinoceros</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Ostrich">click to see about ostriches</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Tiger">click to know about tigers</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div>
+      <h1>OSUPUKO TOURS & PHOTOGRAPHY</h1>
+      <p> Guided and captured pic shots by FRANCIS LITASON, I and my team aim to make your tour and stay one of a kind. Here is home to the best of safaris.</p>
+
+      <h3>The Team Leader</h3>
+      <p> Meet Francis Litason</p>
+
+      <div class="gallery-2">
+        <img src="./WhatsApp Image 2025-03-18 at 02.02.13.jpeg" alt="">
+      </div>
+
+      <h4> QUICK RECAP</h4>
+      <div id="recap">
+        <ul>
+          <li>Finding peace in the wild</li>
+          <li>Connecting with nature's rhythm.</li>
+          <li>The jungle teaches you to appreciate the simple things.</li>
+          <li>A reminder of the beauty and power of the natural world.</li>
+          <li>Reflecting on the magic of the jungle.</li>
+        </ul>
+      </div>
+
+      <h2>ABOUT US</h2>
+      <p>
+        At OSUPUKO TOURS & PHOTOGRAPHY, we believe that every journey is a story waiting to be told, and every moment is a memory worth capturing. Founded by a team of passionate adventurers and professional photographers, we are dedicated to creating unforgettable experiences that blend the thrill of exploration with the artistry of photography.
+      </p>
+      <h3>Our Mission</h3>
+      <p>
+        Our mission is simple: to guide you through the world’s most breathtaking landscapes and to capture the essence of your journey in stunning, timeless photographs. Whether you’re trekking through the wild savannahs, hiking up majestic mountains, or simply soaking in the beauty of nature, we are here to make your adventure extraordinary.
+      </p>
+      <h3>What We Offer</h3>
+      <ul>
+        <li><strong>Guided Tours</strong>: Our experienced safari guides will take you off the beaten path to discover hidden gems and iconic landmarks. From wildlife safaris to cultural excursions, we curate tours that cater to your sense of adventure.</li>
+        <li><strong>Professional Photography</strong>: Our team of skilled photographers will document your journey, ensuring that every smile, every sunset, and every thrilling moment is preserved in high-quality images.</li>
+        <li><strong>Personalized Experiences</strong>: We understand that no two travelers are the same. That’s why we tailor our tours and photography sessions to match your unique preferences and style.</li>
+      </ul>
+
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li><strong>Passion for Adventure</strong>: We live and breathe exploration. Our love for the wild drives us to create experiences that are as authentic as they are exhilarating.</li>
+        <li><strong>Expertise</strong>: With years of experience in both tourism and photography, we know how to make your journey seamless and memorable.</li>
+        <li><strong>Commitment to Excellence</strong>: From the moment you book with us until the final photo is delivered, we are committed to providing exceptional service and unforgettable memories.</li>
+      </ul>
+
+      <h3>Our Team</h3>
+      <p>
+        Led by <strong>FRANCIS LITASON KAMOIRO (@FLK)</strong>, a seasoned safari guide and photographer, our team is a blend of adventure enthusiasts and creative storytellers. Together, we bring a wealth of knowledge, creativity, and passion to every tour and photography session.
+      </p>
+
+      <h3>Join Us</h3>
+      <p>
+        Whether you’re a solo traveler, a couple, or a group of friends, <strong>OSUPUKO TOURS & PHOTOGRAPHY</strong> invites you to embark on a journey like no other. Let us guide you through the wild, capture your most precious moments, and help you create memories that will last a lifetime.
+      </p>
+    </div>
+  </main>
+
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="./ostrich.avif" alt="Image 1">
+    <img src="./photo-lion.avif" alt="Image 2">
+    <img src="./premium_elephant.avif" alt="Image 3">
+    <img src="./tiger.avif" alt="Image 4">
+    <img src="./rhino.avif" alt="Image 5">
+  </div>
+
+  <h3>reach and book with us</h3>
+  <footer>
+    <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a> 
+    <a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://twitter.com/login?"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.instagram.com/accounts/login/?hl=en"> <i class="fa-brands fa-instagram"></i></a>
+  </footer>
+
+  <script>
+    // Smooth Scroll for navigation links
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+          top: targetElement.offsetTop - 50,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Image Hover Effect for Gallery
+    const galleryImages = document.querySelectorAll('.gallery img');
+    galleryImages.forEach(image => {
+      image.addEventListener('mouseover', function () {
+        this.style.transform = 'scale(1.1)';
+        this.style.transition = 'transform 0.3s';
+      });
+      image.addEventListener('mouseout', function () {
+        this.style.transform = 'scale(1)';
+      });
+    });
+
+    // Lightbox Effect for Image Gallery
+    const lightboxImages = document.querySelectorAll('.gallery img');
+    const lightbox = document.createElement('div');
+    lightbox.style.position = 'fixed';
+    lightbox.style.top = '0';
+    lightbox.style.left = '0';
+    lightbox.style.width = '100vw';
+    lightbox.style.height = '100vh';
+    lightbox.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    lightbox.style.display = 'none';
+    lightbox.style.alignItems = 'center';
+    lightbox.style.justifyContent = 'center';
+    lightbox.style.zIndex = '1000';
+
+    const lightboxImg = document.createElement('img');
+    lightboxImg.style.maxWidth = '90%';
+    lightboxImg.style.maxHeight = '90%';
+    lightbox.appendChild(lightboxImg);
+    document.body.appendChild(lightbox);
+
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    lightboxImages.forEach(image => {
+      image.addEventListener('click', () => {
+        lightboxImg.src = image.src;
+        lightbox.style.display = 'flex';
+      });
+    });
+
+    // Toggle "QUICK RECAP" Section
+    const recapSection = document.getElementById('recap');
+    const recapToggleButton = document.createElement('button');
+    recapToggleButton.textContent = 'Toggle Quick Recap';
+    recapToggleButton.style.padding = '10px';
+    recapToggleButton.style.cursor = 'pointer';
+
+    document.querySelector('main').insertBefore(recapToggleButton, recapSection);
+    recapToggleButton.addEventListener('click', () => {
+      recapSection.classList.toggle('hidden');
+      if (recapSection.classList.contains('hidden')) {
+        recapToggleButton.textContent = 'Show Quick Recap';
+      } else {
+        recapToggleButton.textContent = 'Hide Quick Recap';
+      }
+    });
+
+    // CSS for Hidden Recap Section
+    const style = document.createElement('style');
+    style.textContent = `
+      .hidden {
+        display: none;
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
